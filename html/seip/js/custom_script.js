@@ -13,7 +13,7 @@
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
-  if (scroll >= 100) {
+  if (scroll >= 10) {
     $('header').addClass('sticky')
   } else {
     $('header').removeClass('sticky')
