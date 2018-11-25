@@ -1,4 +1,5 @@
 /*common*/
+*{border-radius:0!important;}
 body{font-family: 'Ubuntu', sans-serif;font-size:14px;}
 h1{font-size: 2rem;font-weight: 300;line-height: 1; }
 a{color:#0ea5d7;transition:all .3s;}
@@ -72,6 +73,5 @@ footer a:hover{}
 .team-data p{margin-bottom:0;}
 
 /*content-area*/
-.list-sm a {
-  padding: .4rem 1.25rem;
-}
+.list-sm a {padding: .4rem 1.25rem;}
+.card-header{background:#524fa1;color:#fff;}
