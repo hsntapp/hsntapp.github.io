@@ -31,7 +31,7 @@ header.sticky .row > div{height:40px;}*/
 /*position:fixed;top:0;left:0;z-index:999;width:100%;*/
 /*navigation*/
 nav.main-nav{background:rgba(0,0,0,.03)}
-nav.main-nav ul{padding-left:0;list-style:none;text-align:center;margin:0;font-size:0;}
+nav.main-nav ul{padding-left:0;list-style:none;margin:0;font-size:0;}
 nav.main-nav ul li{display:inline-block;}
 nav.main-nav ul li a{padding:5px 8px;display:inline-block;font-size:14px;}
 nav.main-nav ul li a.active,nav.main-nav ul li a:hover{background:#524fa1;color:#fff;}
@@ -70,3 +70,8 @@ footer a:hover{}
 .team-member img{width:120px;border-right:1px solid #eee}
 .team-data {margin-left:20px;padding-top:5px;}
 .team-data p{margin-bottom:0;}
+
+/*content-area*/
+.list-sm a {
+  padding: .4rem 1.25rem;
+}
