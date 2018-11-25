@@ -51,6 +51,10 @@ nav.main-nav ul li a.active,nav.main-nav ul li a:hover{background:#524fa1;color:
 /*footer*/
 footer a{color:#ccc;}
 footer a:hover{}
+.footer-link a{padding:0 10px;position:relative;}
+.footer-link a:after{position:absolute;content:'';height:10px;width:1px;background:#ccc;right:0px;top:4px;}
+.footer-link a:first-child{padding-left:0;}
+.footer-link a:last-child:after{display:none;}
 /*widget-footer*/
 .widget-footer img{max-height:100px}
 .widget-footer .widget-content{margin-top:20px;}
