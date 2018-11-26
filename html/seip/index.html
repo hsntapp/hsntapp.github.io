@@ -145,6 +145,22 @@
         <div class="content-area">
 
           <div class="row">
+            <div class="col-sm-6">
+              <div id="total_trainee" style="width: 100%; height: 300px;"></div>
+            </div>
+            <div class="col-sm-6">
+              <div id="total_training" style="width: 100%; height: 300px;"></div>
+            </div>
+            <div class="col-sm-6">
+              <div id="training_range" style="width: 100%; height: 300px;"></div>
+            </div>
+            <div class="col-sm-6">
+              <div id="total_trainings" style="width: 100%; height: 300px;"></div>
+            </div>
+          </div>
+
+
+          <div class="row">
             <div class="col-sm-6 mb-4">
               <div class="card">
                 <div class="card-header">
@@ -207,11 +223,16 @@
                 </div>
 
                 <ul class="list-group list-group-flush list-sm">
-                  <a href="#" class="list-group-item text-truncate">Travel Order of Mr. Fazlul Bari, DEPD (Private-1) and </a>
-                  <a href="#" class="list-group-item text-truncate">Request for EoI for the position of AEPD (Private)</a>
-                  <a href="#" class="list-group-item text-truncate">Invitation for Tender (National) for SEIP_BAPA_GD-70</a>
-                  <a href="#" class="list-group-item text-truncate">NOC for Mr. Fazlul Bari, DEPD (Private-1) for Passport</a>
-                  <a href="#" class="list-group-item text-truncate">Travel Order of Mr. Abu Daiyan Mohammad Ahsanullah</a>
+                  <a href="#" class="list-group-item text-truncate">Travel Order of Mr. Fazlul Bari, DEPD (Private-1)
+                    and </a>
+                  <a href="#" class="list-group-item text-truncate">Request for EoI for the position of AEPD
+                    (Private)</a>
+                  <a href="#" class="list-group-item text-truncate">Invitation for Tender (National) for
+                    SEIP_BAPA_GD-70</a>
+                  <a href="#" class="list-group-item text-truncate">NOC for Mr. Fazlul Bari, DEPD (Private-1) for
+                    Passport</a>
+                  <a href="#" class="list-group-item text-truncate">Travel Order of Mr. Abu Daiyan Mohammad
+                    Ahsanullah</a>
                 </ul>
               </div>
             </div>
@@ -253,5 +274,81 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/custom_script.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages: ["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var trainee_data = google.visualization.arrayToDataTable([
+      ['Association', 'Number'],
+      ['AEOSIB', 7238],
+      ['BACCO', 5785],
+      ['BACI', 13110],
+      ['BASIS', 22129],
+      ['BBSME', 10884],
+      ['BEIOA', 8354],
+      ['BGMEA', 39930],
+      ['BIGM', 123],
+      ['BITAC', 3275],
+      ['BKMEA', 23249],
+      ['BMET', 34059],
+      ['BRTC', 4358],
+      ['BTMA', 31500],
+      ['BWCCI', 1000],
+      ['DTE', 10598],
+      ['LFMEAB', 4860],
+      ['PKSF', 10011],
+      ['Uttoron', 642],
+      ['AEOSIB', 7238],
+    ]);
+    var training_data = google.visualization.arrayToDataTable([
+      ['Gender', 'Number'],
+      ['Boys', 7238],
+      ['Girls', 5785],
+    ]);
+    var training_range_data = google.visualization.arrayToDataTable([
+      ['Division', 'Range'],
+      ['Barishal', 300],
+      ['Chittagong', 500],
+      ['Dhaka', 700],
+      ['Khulna', 400],
+      ['Mymensingh', 200],
+      ['Rajshahi', 100],
+      ['Rangpur', 300],
+      ['Sylhet', 100],
+    ]);
+
+
+    var trainee_options = {
+      title: 'Total Trainee',
+      is3D: true,
+      pieSliceText: 'label',
+      slices: {  4: {offset: 0.2},
+        12: {offset: 0.3},
+        14: {offset: 0.4},
+        15: {offset: 0.5},
+      },
+    };
+    var training_options = {
+      title: 'Total Training',
+      pieHole: 0.4,
+      pieSliceText: 'label',
+    };
+    var training_range_options = {
+      title: 'Training Range',
+      pieSliceText: 'label',
+    };
+
+
+    var chart_trainee = new google.visualization.PieChart(document.getElementById('total_trainee'));
+    var chart_training = new google.visualization.PieChart(document.getElementById('total_training'));
+    var chart_training_range = new google.visualization.PieChart(document.getElementById('training_range'));
+
+    chart_trainee.draw(trainee_data, trainee_options);
+    chart_training.draw(training_data, training_options);
+    chart_training_range.draw(training_range_data, training_range_options);
+  }
+</script>
 </body>
 </html>

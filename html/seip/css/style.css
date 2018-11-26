@@ -75,3 +75,10 @@ footer a:hover{}
 /*content-area*/
 .list-sm a {padding: .4rem 1.25rem;}
 .card-header{background:#524fa1;color:#fff;}
+
+/*amchart*/
+.total_trainee {
+  width: 100%;
+  max-height: 200px;
+  height: 100vh;
+}
