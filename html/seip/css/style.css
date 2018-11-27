@@ -16,6 +16,7 @@ img{max-width:100%;height:auto}
 /*header*/
 header * {transition:all .3s;}
 header{background-image:url(../images/banner.jpg);background-size:cover;height:350px;transition:all .3s;}
+header.inner{height:118px;}
 header .partners img{height:40px;}
 .header-top{background:#00000033;padding:10px 0;}
 header .row > div{height:60px;}
@@ -82,3 +83,4 @@ footer a:hover{}
   max-height: 200px;
   height: 100vh;
 }
+.mbc-0 > *{margin-bottom:0;}

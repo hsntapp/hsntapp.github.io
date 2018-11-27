@@ -43,8 +43,8 @@
               <p><strong>Skills for Employment Investment Program</strong></p>
               <p>Finance Division, Ministry of Finance</p>
               <p><strong>Mailing Address:</strong></p>
-              <p>SEIP SDCMU Office</p>
-              <p>Probashi Kallyan Bhaban (15th Floor)</p>
+              <p>SEIP SDCMU Office <br>
+                Probashi Kallyan Bhaban (15th Floor)</p>
               <p>71-72, Old Elephant Road</p>
               <p>Eskaton Garden, Dhaka-1000</p>
               <p>Bangladesh.</p>
@@ -59,7 +59,7 @@
                 </tr>
                 <tr>
                   <td>E-mail</td>
-                  <td>: info@seif-fd.gov.bd</td>
+                  <td>: info@seip-fd.gov.bd</td>
                 </tr>
                 <tr>
                   <td>Web</td>
