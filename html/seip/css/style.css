@@ -84,3 +84,7 @@ footer a:hover{}
   height: 100vh;
 }
 .mbc-0 > *{margin-bottom:0;}
+.card-mystic {border:none;}
+.card-mystic .card-header{padding:.5rem;background:rgba(194, 195, 185, 0.26);color:#333;font-size:26px;font-weight:300;}
+.card-mystic .list-group-item:first-child{font-weight:300;font-size:24px;}
+.card-mystic .list-group-item{border-color:#eee;padding:.5rem 0;}
