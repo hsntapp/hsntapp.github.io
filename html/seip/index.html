@@ -5,8 +5,10 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <title>SEIP | Skills For Employment Investment Program</title>
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
   <link rel="stylesheet" href="css/ticker.css">
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,8 +19,8 @@
 <header class="d-flex flex-column justify-content-between">
   <div class="header-top">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center hpx-50">
           <div class="logo">
             <a href="index.html"><img src="images/logo.png" alt="logo"></a>
           </div>
@@ -26,45 +28,32 @@
             Skills For Employment Investment Program
           </span>
         </div>
-        <div class="col-lg-3 d-flex justify-content-end align-items-center">
-          <div class="partners">
-            <img src="images/bg.jpg" alt="bg">
-            <img src="images/adb.jpg" alt="adb">
-            <img src="images/ceccsc.jpg" alt="ceccsc">
+        <div class="d-flex justify-content-end align-items-center">
+          <div class="partners d-flex">
+            <img src="images/bd.png" alt="bg">
+            <img src="images/adb.jpg" alt="adb" class="ml-1">
+            <img src="images/ceccsc.jpg" alt="ceccsc" class="ml-1">
           </div>
         </div>
       </div>
 
     </div>
-    <div class="container">
-      <div class="search d-flex justify-content-end">
-        <div class="input-group">
-          <input type="text" class="form-control" aria-label="Sizing example input"
-                 aria-describedby="inputGroup-sizing-lg">
-          <div class="input-group-append">
-              <span class="input-group-text" id="inputGroup-sizing-lg">
-                <i class="fas fa-search"></i>
-              </span>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-  <div class="header-bottom">
+  <div class="header-bottom flex-fill align-items-center d-flex">
     <div class="container">
-      <div class="header-content text-white text-center mb-4">
-        <div class="p-3 mb-0 display-5">Readymade Garment Sector</div>
-        <div class="d-flex">
-          <div class="flex-fill bg-primary p-3 col">
+      <div class="header-content text-white text-center">
+        <div class="p-3 mb-0 display-6">Readymade Garment Sector</div>
+        <div class="d-flex fs-16">
+          <div class="flex-fill bg-primary-tr py-2 col">
             <p>Enrolled</p>
             <p>50000</p>
           </div>
-          <div class="flex-fill bg-success p-3 col">
+          <div class="flex-fill bg-success-tr py-2 col">
             <p>Certified</p>
             <p>42000</p>
           </div>
-          <div class="flex-fill bg-warning p-3 col">
-            <p>Job Placement</p>
+          <div class="flex-fill bg-warning-tr py-2 col">
+            <p>Employed</p>
             <p>27000</p>
           </div>
         </div>
@@ -74,13 +63,17 @@
 </header>
 
 <nav class="main-nav">
-  <div class="container">
+  <div class="container d-flex justify-content-between">
     <ul>
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="#">Our Works</a></li>
-      <li><a href="#">Statics</a></li>
-      <li><a href="#">Publications</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a>
+        <ul>
+          <li><a href="#">Our Works</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Statistics</a></li>
+      <li><a href="#">Resource</a></li>
       <li><a href="notices.html">Notices</a></li>
       <li><a href="admission-circular.html">Admission Circular</a></li>
       <li><a href="#">Gallery</a></li>
@@ -88,8 +81,12 @@
       <li><a href="#">SEIP Graduate</a></li>
       <li><a href="contact.html">Contact Us</a></li>
       <li><a href="#">Web Mail</a></li>
-      <li><a href="#">Associated Links</a></li>
+      <li><a href="#">Quick Links</a></li>
     </ul>
+    <div class="search-wrap position-relative">
+      <button class="btn btn-sm bg-white"><i class="fas fa-search"></i></button>
+      <input type="text" autofocus class="form-control form-control-sm" placeholder="Type to search ...">
+    </div>
   </div>
 </nav>
 
@@ -119,7 +116,7 @@
   </div>
 </div>
 
-<div class="content-wrap py-5">
+<div class="content-wrap py-2">
   <div class="container">
     <div class="row">
       <div class="col-sm-2">
@@ -147,7 +144,7 @@
             <div class="col-sm-6 mb-4">
               <div class="card">
                 <div class="card-header">
-                  News Highlights
+                  <h5 class="mb-0">News Highlights</h5>
                 </div>
                 <ul class="list-group list-group-flush list-sm">
                   <a href="#" class="list-group-item text-truncate">SEIP has achieved the milestone of 400,00
@@ -164,7 +161,7 @@
             <div class="col-sm-6 mb-4">
               <div class="card">
                 <div class="card-header">
-                  Admission Circulars
+                  <h5 class="mb-0">Admission Circulars</h5>
                 </div>
 
                 <ul class="list-group list-group-flush list-sm">
@@ -182,7 +179,7 @@
             <div class="col-sm-6 mb-4">
               <div class="card">
                 <div class="card-header">
-                  TMS Statistics
+                  <h5 class="mb-0">TMS Statistics</h5>
                 </div>
 
                 <ul class="list-group list-group-flush list-sm">
@@ -202,7 +199,7 @@
             <div class="col-sm-6 mb-4">
               <div class="card">
                 <div class="card-header">
-                  Notices
+                  <h5 class="mb-0">Notices</h5>
                 </div>
 
                 <ul class="list-group list-group-flush list-sm">
@@ -225,22 +222,6 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm-4">
-        <div id="total_trainee" style="width: 100%; height: 300px;"></div>
-
-      </div>
-      <div class="col-sm-4">
-
-        <div id="total_training" style="width: 100%; height: 300px;"></div>
-      </div>
-      <div class="col-sm-4">
-        <div id="training_range" style="width: 100%; height: 300px;"></div>
-      </div>
-      <div class="col-sm-12 mt-4">
-        <div id="training_certification" style="width: 100%; height: 500px;"></div>
-      </div>
-    </div>
   </div>
 </div>
 

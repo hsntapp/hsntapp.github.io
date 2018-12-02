@@ -30,7 +30,7 @@
   overflow: hidden;
   padding-left: 100%;
   box-sizing: content-box;
-  background:#524fa1;
+  background:#f7f7f7;
   padding-top:5px;
   padding-bottom:5px;
 }
@@ -62,7 +62,7 @@
 
 .ticker-wrap .ticker__item,.ticker-wrap .ticker__item a {
   display: inline-block;
-  color: white;
+  color: red;
 }
 .ticker-wrap:hover .ticker {
   animation-play-state: paused;
